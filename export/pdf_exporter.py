@@ -11,7 +11,6 @@ def export_results_pdf(user, level):
         session.query(GameResult).filter_by(difficulty=level).join(User).order_by(GameResult.score.desc()).all()
     )
 
-    # 🗂 Ścieżka do folderu Downloads
     downloads_path = Path.home() / "Downloads"
     filename = f"{user.username}_{level}_results.pdf"
     file_path = downloads_path / filename
@@ -41,4 +40,4 @@ def export_results_pdf(user, level):
     c.save()
     session.close()
     
-    return str(file_path)  # ⬅️ Zwracamy ścieżkę dla messagebox
+    return str(file_path)

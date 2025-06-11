@@ -10,8 +10,12 @@ Gra Sudoku z interaktywnym GUI w Pythonie (Tkinter), systemem punktów, rankingi
         cd sudoku-brain
 
     Uruchom aplikację:
-
-        python main.py
+        1.otwórz terminal
+        2. jesli nie masz virtualenv: pip install virtualenv
+        3.komenda: python -m venv venv
+        4.aktywuj venv: venv\Scripts\activate
+        5.pip install -r requirements.txt
+        6. komenda: python main.py
 
 📦 Wszystkie biblioteki są wbudowane w requirements.txt, a domyślna baza danych tworzy się automatycznie (sqlite).
 

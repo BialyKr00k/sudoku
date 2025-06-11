@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from database.db import Session
 from database.models import GameResult
-from export.pdf_exporter import export_results_pdf  # <- Upewnij się, że ta funkcja zwraca ścieżkę
+from export.pdf_exporter import export_results_pdf
 
 def show_results(user, level):
     root = tk.Tk()

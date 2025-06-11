@@ -37,7 +37,7 @@ def start_game(user, level):
     time_label.pack(side='right', padx=20)
 
     timer_id = None
-    hint_update_id = None  # NEW
+    hint_update_id = None
 
     def update_timer():
         nonlocal timer_id
@@ -123,7 +123,7 @@ def start_game(user, level):
     def end_game():
         if timer_id:
             window.after_cancel(timer_id)
-        if hint_update_id:  # CANCEL HINT TIMER
+        if hint_update_id:
             window.after_cancel(hint_update_id)
 
         elapsed = sm.elapsed_time()
