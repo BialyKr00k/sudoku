@@ -39,31 +39,6 @@ Gra Sudoku z interaktywnym GUI w Pythonie (Tkinter), systemem punktów, rankingi
 
     Podgląd wyników i eksport do PDF (do katalogu Pobrane)
 
-📁 Struktura projektu
-
-sudoku-brain/
-│
-├── database/
-│   ├── db.py               # Połączenie z bazą danych SQLite
-│   └── models.py           # Modele: User, GameResult, SudokuBoard
-│
-├── gui/
-│   ├── game_window.py      # Główne okno gry
-│   ├── login_window.py     # Logowanie / rejestracja
-│   ├── settings_window.py  # Wybór poziomu
-│   └── results_window.py   # Wyniki + eksport do PDF
-│
-├── logic/
-│   ├── score_manager.py    # System punktów i czasu
-│   └── encryption.py       # Haszowanie haseł (bcrypt)
-│
-├── export/
-│   └── pdf_exporter.py     # Eksport wyników do PDF
-│
-├── sudoku.db               # Plik bazy danych SQLite (tworzy się automatycznie)
-├── requirements.txt        # Biblioteki projektu
-└── main.py                 # Punkt startowy aplikacji
-
 ✅ Wymagania
 
     Python 3.10+ (zalecane: 3.12)
